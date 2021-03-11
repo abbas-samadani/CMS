@@ -1,10 +1,11 @@
 <?php
+    session_start();
     function config(){
         $server="localhost";
         $user="root";
-        $spassword="";
+        $password="";
         $db="CMS";
-        $connect=mysqli_connect($server,$user,$spassword,$db);
+        $connect=mysqli_connect($server,$user,$password,$db);
 
         return $connect;
     }

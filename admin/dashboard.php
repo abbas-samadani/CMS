@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+﻿<?php
+session_start();
+    if(!isset($_SESSION["username"])){
+        header("location:index.php?login=first");
+    }
+
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -140,7 +148,7 @@
                                     <span class="photo">
                                         <img alt="avatar" src="img/avatar-mini.jpg"></span>
                                     <span class="subject">
-                                        <span class="from">سجاد باقرزاده</span>
+                                        <span class="from"><?php echo $_SESSION["username"] ?></span>
                                         <span class="time">همین حالا</span>
                                     </span>
                                     <span class="message">سلام،متن پیام نمایشی جهت تست
@@ -260,7 +268,7 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <img alt="" src="img/avatar1_small.jpg">
-                            <span class="username">سجاد باقرزاده</span>
+                            <span class="username"><?php echo $_SESSION["username"]  ?></span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu extended logout">
@@ -283,7 +291,7 @@
                 <!-- sidebar menu start-->
                 <ul class="sidebar-menu">
                     <li class="active">
-                        <a class="" href="index.html">
+                        <a class="" href="dashboard.php">
                             <i class="icon-dashboard"></i>
                             <span>صفحه اصلی</span>
                         </a>
@@ -291,73 +299,17 @@
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon-book"></i>
-                            <span>عناصر صفحه</span>
+                            <span>مدیریت منوها</span>
                             <span class="arrow"></span>
                         </a>
                         <ul class="sub">
-                            <li><a class="" href="general.html">عمومی</a></li>
-                            <li><a class="" href="buttons.html">دکمه ها</a></li>
-                            <li><a class="" href="widget.html">ویجت ها</a></li>
-                            <li><a class="" href="slider.html">اسلایدر ها</a></li>
-                            <li><a class="" href="font_awesome.html">فونت های شکل دار</a></li>
+                            <li><a class="" href="general.html">لیست منوها</a></li>
+                            <li><a class="" href="buttons.html">افزودن منوی جدید</a></li>
+
                         </ul>
                     </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="">
-                            <i class="icon-cogs"></i>
-                            <span>کامنت ها</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <ul class="sub">
-                            <li><a class="" href="grids.html">گرید</a></li>
-                            <li><a class="" href="calendar.html">تقویم</a></li>
-                            <li><a class="" href="charts.html">چارت</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="">
-                            <i class="icon-tasks"></i>
-                            <span>ابزارهای فرم</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <ul class="sub">
-                            <li><a class="" href="form_component.html">کامنت فرم</a></li>
-                            <li><a class="" href="form_wizard.html">فرم Wizard</a></li>
-                            <li><a class="" href="form_validation.html">ارزیابی فرم</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="">
-                            <i class="icon-th"></i>
-                            <span>اطلاعات جدول</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <ul class="sub">
-                            <li><a class="" href="basic_table.html">جدول ساده</a></li>
-                            <li><a class="" href="dynamic_table.html">جدول داینامیک</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="" href="inbox.html">
-                            <i class="icon-envelope"></i>
-                            <span>ایمیل </span>
-                            <span class="label label-danger pull-right mail-info">2</span>
-                        </a>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="">
-                            <i class="icon-glass"></i>
-                            <span>عناصر اضافی</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <ul class="sub">
-                            <li><a class="" href="blank.html">صفحه خالی</a></li>
-                            <li><a class="" href="profile.html">پروفایل</a></li>
-                            <li><a class="" href="invoice.html">فاکتور</a></li>
-                            <li><a class="" href="404.html">404 Error</a></li>
-                            <li><a class="" href="500.html">500 Error</a></li>
-                        </ul>
-                    </li>
+
+
                     <li>
                         <a class="" href="login.html">
                             <i class="icon-user"></i>
