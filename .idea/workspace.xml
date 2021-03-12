@@ -23,12 +23,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\dev\xampp_\htdocs\CMS\admin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\dev\xampp_\htdocs\CMS\admin" />
     </key>
@@ -57,7 +60,7 @@
       <updated>1472379803576</updated>
       <workItem from="1472379804841" duration="621000" />
       <workItem from="1472449216391" duration="3765000" />
-      <workItem from="1615423009927" duration="14464000" />
+      <workItem from="1615423009927" duration="31977000" />
     </task>
     <servers />
   </component>
@@ -80,9 +83,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="730" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615495031007" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1615495051381">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1615503916860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615495051381" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615503916860" />
   </component>
 </project>

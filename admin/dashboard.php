@@ -1,11 +1,11 @@
 ﻿<?php
+ob_start();
 include_once "../include/functions.php";
     if(!isset($_SESSION["username"])){
         header("location:index.php?login=first");
     }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
