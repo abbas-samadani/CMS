@@ -6,6 +6,7 @@ $data = showedit($id);
 if(isset($_POST['btn'])){
     $data=$_POST['frm'];
     editmenu($data,$id);
+    header("location:dashboard.php?m=menu&p=list");
 }
 ?>
 

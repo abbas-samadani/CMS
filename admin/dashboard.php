@@ -308,6 +308,19 @@ include_once "../include/functions.php";
 
                         </ul>
                     </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-book"></i>
+                            <span>دسته بندی محصولات</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashboard.php?m=product_cat&p=list">لیست محصولات</a></li>
+                            <li><a class="" href="dashboard.php?m=product_cat&p=add">افزودن محصول جدید</a></li>
+
+                        </ul>
+                    </li>
+
 
 
                     <li>
